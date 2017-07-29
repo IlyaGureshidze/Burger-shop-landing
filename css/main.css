@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-b.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehack';
+  src: url("../fonts/lifehack_medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gagalin';
+  src: url("../fonts/gagalin-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  color: #2f3234; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 0; }
+
+.maincontent {
+  height: 100%;
+  min-height: 650px; }
+
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+.section {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  min-width: 940px;
+  min-height: 650px; }
+
+.about {
+  background-image: url(../../img/about-bg-textured.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.header {
+  width: 100%; }
+
+.header__logo {
+  float: left;
+  display: inline-block; }
+
+.header__wrap {
+  float: right; }
+
+.header__menu {
+  float: left; }
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .nav__item:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    margin: 0 12px; }
+  .nav__item:last-child:after {
+    display: none; }
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .nav__link:hover {
+    text-decoration: underline; }
+
+.header__button {
+  float: left; }
+
+.order-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle; }
+
+.about__img {
+  float: left; }
+
+.section__title {
+  font-family: "gagalin";
+  font-size: 72px;
+  color: #f9b43b;
+  text-transform: uppercase;
+  width: 100%; }
+
+.about__description {
+  float: left; }
+
+.about__description-text {
+  font-family: "lifehack";
+  color: #fff;
+  font-size: 65px; }
+
+.best {
+  background-image: url(../../img/best-bg.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.section__title--best {
+  text-align: center;
+  color: #2f3234; }
+
+.best__list {
+  float: left;
+  width: 100%; }
+
+.best-list__item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center; }
+  .best-list__item:last-child {
+    margin-right: 0; }

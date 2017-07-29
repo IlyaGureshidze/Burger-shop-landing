@@ -1,0 +1,78 @@
+.about{
+    background-image: url(../../img/about-bg-textured.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+}
+
+.header__logo{
+    float: left;
+    display: inline-block;
+}
+.header__wrap{
+    float: right;
+}
+.header__menu{
+float: left;
+}
+.nav{
+    
+}
+.nav__item{
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    
+    &:after{
+        display: inline-block;
+        vertical-align: middle;
+        content:" ";
+        @include circle(5px,#fff);
+        margin: 0 12px;
+    }
+    
+    &:last-child:after{
+        display: none;
+    }
+}
+.nav__link{
+   text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.header__button{
+    float: left;
+}
+.order-link{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about__img{float: left;}
+.section__title{
+    font-family: "gagalin";
+    font-size: 72px;
+    color:$title-orange;
+    text-transform: uppercase;
+    width: 100%;
+}
+.about__description{float: left;}
+.about__description-text{
+    font-family: "lifehack";
+    color:#fff;
+    font-size:65px;
+}

@@ -1,13 +1,13 @@
 //Config
-@include 'config/_mixins;
-@include 'config/_variables';
+@import "config/_variables";
+@import "config/_mixins";
 
 //Base
-@include 'layout/_fonts';
-@include 'layout/_base';
-@include 'layout/_adjustments';
+@import "layout/_fonts";
+@import "layout/_base";
+@import "layout/_adjustments";
 
 //Sections
-@include 'sections/_about';
-@include 'sections/_best';
-@include 'sections/_feedbacks';
+@import "sections/_about";
+@import "sections/_best";
+@import "sections/_feedbacks";

@@ -1,0 +1,29 @@
+.best{
+    background-image: url(../../img/best-bg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section__title--best{
+    text-align: center;
+    color:#2f3234;
+}
+.best__list{
+    float: left;
+    width: 100%;
+}
+
+.best-list__item{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+}
+best-list__img{
+    
+}
