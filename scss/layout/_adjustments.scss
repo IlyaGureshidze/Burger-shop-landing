@@ -19,3 +19,8 @@
   min-width: 940px;
   min-height: 650px;
 }
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
