@@ -18,6 +18,8 @@
   background-color: rgba(0,0,0,0.31);
   min-width: 940px;
   min-height: 650px;
+    display: table;
+    width: 100%;
 }
 .clearfix:after{
     content:"";
