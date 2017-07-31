@@ -368,12 +368,48 @@ ul {
   width: 540px; }
 
 .section__title_team {
-  text-align: center; }
+  line-height: 1;
+  margin-bottom: 82px; }
 
 .team__center-container {
   width: 380px;
   margin: 0 auto;
+  padding-top: 89px;
   height: 100%; }
 
 .accordeon {
   color: #fff; }
+
+.team__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: 'gagalin';
+  margin-bottom: 35px; }
+
+.team__description {
+  height: 0;
+  overflow: hidden; }
+
+.team__img {
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 23px;
+  margin-left: 23px; }
+  .team__img img {
+    margin-left: -18px; }
+
+.team__about {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Ubuntu'; }
+
+.team__name {
+  font-weight: 900;
+  padding-bottom: 7px; }
+
+.team__text {
+  font-weight: 300; }
