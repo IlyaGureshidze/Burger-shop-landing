@@ -1,0 +1,26 @@
+.team{
+    background-image: url(../img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team__content{
+    background-color: rgba(47,50,52,.93);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 540px;
+}
+.section__title_team{
+    text-align: center;
+}
+.team__center-container{
+    width: 380px;
+    margin: 0 auto;
+    height: 100%;
+}
+.accordeon{
+    color:#fff;
+}
