@@ -15,12 +15,19 @@
     float: left;
     display: inline-block;
 }
+.logo{
+    
+    img{
+        margin-top: -2px;
+        margin-left: -8px;
+    }
+}
 .header__wrap{
     float: right;
 }
 .header__menu{
-float: left;
-padding-top: 27px;
+    float: left;
+    padding-top: 20px;
     margin-right: 16px;
 }
 .nav{
@@ -39,7 +46,7 @@ padding-top: 27px;
         vertical-align: middle;
         content:" ";
         @include circle(5px,#fff);
-        margin: 0 12px;
+        margin: 0 13px;
     }
     
     &:last-child:after{
@@ -62,7 +69,7 @@ padding-top: 27px;
 }
 .header__button{
     float: left;
-    padding-top: 22px;
+    padding-top: 18px;
 }
 .order-link{
     text-transform: uppercase;
@@ -86,6 +93,11 @@ padding-top: 27px;
 .about__img{
     float: left;
     width: 470px;
+    
+    img{
+        margin-left: 14px;
+        margin-top: -14px;
+    }
 }
 .section__title{
     font-family: "gagalin";
@@ -97,14 +109,15 @@ padding-top: 27px;
     margin: 0 0 7px;
 }
 .about__description{
-    padding-top: 120px;
+    padding-top: 112px;
     float: left;
+    padding-left: 8px;
     width: 470px;
 }
 .about__description-text{
     font-family: "lifehack";
     color:#fff;
-    font-size:65px;
+    font-size:63px;
     font-weight: 500;
     line-height: 1;
 }
@@ -119,14 +132,14 @@ padding-top: 27px;
     position: fixed;
     z-index: 10;
     top: 90px;
-    right: 48px;
+    right: 50px;
 }
 .nab-bar__list{
     
 }
 .nab-bar__item{
     box-shadow: 0 0 2px rgba(255,255,255,0);
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     border:4px solid transparent;
     border-radius: 50%;
     
