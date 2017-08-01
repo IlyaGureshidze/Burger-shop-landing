@@ -431,5 +431,52 @@ ul {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.footer__address {
+  color: #fff;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  padding-top: 7px; }
+
+.footer__phone {
+  font-family: "Ubuntu";
+  font-weight: 900;
+  color: #e45028;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 20px;
+  background-image: url(../img/icons/phone.svg);
+  background-position: 0 5px;
+  background-repeat: no-repeat; }
+
+.footer__info {
+  width: 50%;
+  display: block;
+  float: left;
+  height: 100%; }
+
 .socials {
-  text-align: right; }
+  text-align: right;
+  width: 50%;
+  display: block;
+  float: left;
+  height: 100%;
+  line-height: 58px; }
+
+.socials_wrap {
+  display: inline-block; }
+
+.socials__link {
+  text-decoration: none;
+  color: #fff; }
+
+.socials_icon {
+  fill: #fff;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  display: inline-block; }
+  .socials_icon:hover {
+    opacity: 1; }
