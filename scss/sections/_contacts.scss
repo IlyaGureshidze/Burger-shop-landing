@@ -1,0 +1,20 @@
+.contacts{
+    @include backgroundImage('../img/map-markers.jpg');
+    position: relative;
+}
+
+.footer{
+    height: 58px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    @include backgroundImage('../img/footer-bg.jpg');
+}
+.footer__address{
+    
+}
+.footer__phone{
+}
+.socials{
+    text-align: right;
+}

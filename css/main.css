@@ -81,7 +81,7 @@ ul {
   clear: both; }
 
 .about {
-  background-image: url(../img/about-bg-textured.png);
+  background-image: url("../img/about-bg-textured.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,7 +223,7 @@ ul {
   color: #fff; }
 
 .best {
-  background-image: url(../img/best-bg.png);
+  background-image: url("../img/best-bg.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,3 +413,23 @@ ul {
 
 .team__text {
   font-weight: 300; }
+
+.contacts {
+  background-image: url("../img/map-markers.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.footer {
+  height: 58px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../img/footer-bg.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.socials {
+  text-align: right; }

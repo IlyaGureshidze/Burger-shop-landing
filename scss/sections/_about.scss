@@ -1,8 +1,5 @@
 .about{
-    background-image: url(../img/about-bg-textured.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backgroundImage('../img/about-bg-textured.png');
     position: relative;
 }
 

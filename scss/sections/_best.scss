@@ -1,8 +1,5 @@
 .best{
-    background-image: url(../img/best-bg.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backgroundImage('../img/best-bg.png');
     position: relative;
 }
 .best__container{

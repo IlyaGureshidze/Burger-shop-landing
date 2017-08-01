@@ -5,6 +5,13 @@
   background-color: $color;
 }
 
+@mixin backgroundImage($url) {
+    background-image: url($url);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 //responsive
 @function rem($px) {
   @return $px / 16px+0rem;
