@@ -1,7 +1,6 @@
 .team{
-    background-image: url(../img/team-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background('../img/team-bg.jpg');
+    background-position: 0% 0%;
     position: relative;
 }
 .team__content{
@@ -26,7 +25,6 @@
 .accordeon{
     color:#fff;
 }
-
 .team__list{
     
 }

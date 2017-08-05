@@ -1,43 +1,49 @@
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-b.woff2") format("woff2");
+  font-family: ubuntu;
+  src: url("../fonts/ubuntu/ubuntu-b.eot");
+  src: url("../fonts/ubuntu/ubuntu-b.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-b.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-b.woff") format("woff"), url("../fonts/ubuntu/ubuntu-b.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-b.svg#ubuntubold") format("svg");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-light.woff2") format("woff2");
+  font-family: ubuntu;
+  src: url("../fonts/ubuntu/ubuntu-light.eot");
+  src: url("../fonts/ubuntu/ubuntu-light.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-light.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-light.woff") format("woff"), url("../fonts/ubuntu/ubuntu-light.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-light.svg#ubuntulight") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-medium.woff2") format("woff2");
+  font-family: ubuntu;
+  src: url("../fonts/ubuntu/ubuntu-medium.eot");
+  src: url("../fonts/ubuntu/ubuntu-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-medium.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-medium.woff") format("woff"), url("../fonts/ubuntu/ubuntu-medium.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-medium.svg#ubuntumedium") format("svg");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-regular.woff2") format("woff2");
+  font-family: ubuntu;
+  src: url("../fonts/ubuntu/ubuntu-regular.eot");
+  src: url("../fonts/ubuntu/ubuntu-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-regular.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-regular.woff") format("woff"), url("../fonts/ubuntu/ubuntu-regular.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-regular.svg#ubunturegular") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehack';
-  src: url("../fonts/lifehack_medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/lifehack_medium.eot");
+  src: url("../fonts/lifehack_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/lifehack_medium.woff2") format("woff2"), url("../fonts/lifehack_medium.woff") format("woff"), url("../fonts/lifehack_medium.ttf") format("truetype"), url("../fonts/lifehack_medium.svg#lifehackmedium") format("svg");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gagalin';
-  src: url("../fonts/gagalin-regular.woff2") format("woff2");
+  src: url("../fonts/gagalin-regular.eot");
+  src: url("../fonts/gagalin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gagalin-regular.woff2") format("woff2"), url("../fonts/gagalin-regular.woff") format("woff"), url("../fonts/gagalin-regular.ttf") format("truetype"), url("../fonts/gagalin-regular.svg#gagalinregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-family: ubuntu, Arial, Helvetica, sans-serif;
   line-height: 1.42;
   color: #2f3234; }
 
@@ -56,8 +62,7 @@ ul {
 .wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
-  min-height: 0; }
+  position: relative; }
 
 .maincontent {
   height: 100%;
@@ -81,18 +86,14 @@ ul {
   clear: both; }
 
 .about {
-  background-image: url("../img/about-bg-textured.png");
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background: url("../img/about-bg-textured.png") 50% 50% no-repeat;
   background-size: cover;
   position: relative; }
 
 .header {
-  width: 100%;
   padding-top: 10px; }
 
 .header__logo {
-  float: left;
   display: inline-block; }
 
 .logo img {
@@ -144,7 +145,7 @@ ul {
 .order-link {
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   text-align: center;
   color: #fff;
   font-weight: 500;
@@ -202,13 +203,13 @@ ul {
   top: 90px;
   right: 50px; }
 
-.nab-bar__item {
+.nav-bar__item {
   -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0);
   margin-bottom: 7px;
   border: 4px solid transparent;
   border-radius: 50%; }
-  .nab-bar__item_active {
+  .nav-bar__item_active {
     -webkit-box-shadow: 0 0 2px white;
     box-shadow: 0 0 2px white; }
 
@@ -218,14 +219,12 @@ ul {
   height: 6px;
   border-radius: 3px;
   background-color: #fff;
-  -webkit-box-sizing: initial;
-  box-sizing: initial;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   color: #fff; }
 
 .best {
-  background-image: url("../img/best-bg.png");
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background: url("../img/best-bg.png") 50% 50% no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -273,7 +272,7 @@ ul {
 .best-list__description {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   font-weight: 300;
   color: #2f3234; }
 
@@ -330,14 +329,14 @@ ul {
 .feedback__microtext {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   font-weight: 300;
   margin-bottom: 14px; }
 
 .feedback__button {
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   line-height: 2.308;
   text-align: center;
   color: #fff;
@@ -353,9 +352,9 @@ ul {
     background-color: #1e2021; }
 
 .team {
-  background-image: url(../img/team-bg.jpg);
-  background-repeat: no-repeat;
+  background: url("../img/team-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
+  background-position: 0% 0%;
   position: relative; }
 
 .team__content {
@@ -415,9 +414,7 @@ ul {
   font-weight: 300; }
 
 .contacts {
-  background-image: url("../img/map-markers.jpg");
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background: url("../img/map-markers.jpg") 50% 50% no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -426,21 +423,19 @@ ul {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-image: url("../img/footer-bg.jpg");
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background: url("../img/footer-bg.jpg") 50% 50% no-repeat;
   background-size: cover; }
 
 .footer__address {
   color: #fff;
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   padding-top: 7px; }
 
 .footer__phone {
-  font-family: "Ubuntu";
+  font-family: ubuntu;
   font-weight: 900;
   color: #e45028;
   font-size: 14px;

@@ -1,5 +1,5 @@
 .contacts{
-    @include backgroundImage('../img/map-markers.jpg');
+    @include background('../img/map-markers.jpg');
     position: relative;
 }
 
@@ -8,18 +8,18 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    @include backgroundImage('../img/footer-bg.jpg');
+    @include background('../img/footer-bg.jpg');
 }
 .footer__address{
     color: #fff;
-    font-family: "Ubuntu";
+    font-family: ubuntu;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
     padding-top: 7px;
 }
 .footer__phone{
-    font-family: "Ubuntu";
+    font-family: ubuntu;
     font-weight: 900;
     color: $red;
     font-size: 14px;

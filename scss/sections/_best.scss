@@ -1,12 +1,12 @@
 .best{
-    @include backgroundImage('../img/best-bg.png');
+    @include background('../img/best-bg.png');
     position: relative;
 }
-.best__container{
+.best__container {
     height: 100%;
     position: relative;
 }
-.center-container{
+.center-container {
     display: block;
     width: 100%;
     position: absolute;
@@ -14,40 +14,39 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.section__title_best{
+.section__title_best {
     text-align: center;
     color:#2f3234;
     margin-bottom: 59px;
 }
-.best__list{
+.best__list {
     width: 100%;
     padding-bottom: 120px;
 }
-
-.best-list__item{
+.best-list__item {
     float: left;
     width: 300px;
     margin-right: 20px;
     text-align: center;
     
-    &:last-child{
+    &:last-child {
         margin-right: 0;
     }
 }
-.best-list__img{
+.best-list__img {
     margin-bottom: 35px;
     height: 90px;
 }
-.best-list__title{
+.best-list__title {
     font-family: "lifehack";
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 10px;
 }
-.best-list__description{
+.best-list__description {
     font-size: 14px;
     line-height: 24px;
-    font-family:"Ubuntu";
+    font-family:ubuntu;
     font-weight: 300;
-    color:$dark;
+    color: $dark;
 }
