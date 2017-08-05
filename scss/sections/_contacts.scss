@@ -1,16 +1,21 @@
-.contacts{
+.contacts {
     @include background('../img/map-markers.jpg');
     position: relative;
 }
 
-.footer{
+.footer {
     height: 58px;
     width: 100%;
     position: absolute;
     bottom: 0;
     @include background('../img/footer-bg.jpg');
 }
-.footer__address{
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__address {
     color: #fff;
     font-family: ubuntu;
     font-size: 14px;
@@ -18,7 +23,7 @@
     font-weight: 300;
     padding-top: 7px;
 }
-.footer__phone{
+.footer__phone {
     font-family: ubuntu;
     font-weight: 900;
     color: $red;
@@ -29,28 +34,18 @@
     background-position: 0 5px;
     background-repeat: no-repeat;
 }
-.footer__info{
-    width: 50%;
+.footer__info {
     display: block;
-    float: left;
     height: 100%;
 }
-.socials{
+.socials {
     text-align: right;
-    width: 50%;
-    display: block;
-    float:left;
-    height: 100%;
-    line-height: 58px;
 }
-.socials_wrap{
-    display: inline-block;
-}
-.socials__link{
+.socials__link {
     text-decoration: none;
     color:#fff;
 }
-.socials_icon{
+.socials_icon {
     fill:#fff;
     opacity:0.3;
     width: 20px;

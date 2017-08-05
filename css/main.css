@@ -79,7 +79,7 @@ ul {
 .container {
   width: 940px;
   margin: 0 auto;
-  height: 100vh; }
+  height: 100%; }
 
 .section {
   height: 100vh;
@@ -445,6 +445,20 @@ ul {
   background: url("../img/footer-bg.jpg") 50% 50% no-repeat;
   background-size: cover; }
 
+.footer__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .footer__address {
   color: #fff;
   font-family: ubuntu;
@@ -465,21 +479,11 @@ ul {
   background-repeat: no-repeat; }
 
 .footer__info {
-  width: 50%;
   display: block;
-  float: left;
   height: 100%; }
 
 .socials {
-  text-align: right;
-  width: 50%;
-  display: block;
-  float: left;
-  height: 100%;
-  line-height: 58px; }
-
-.socials_wrap {
-  display: inline-block; }
+  text-align: right; }
 
 .socials__link {
   text-decoration: none;
