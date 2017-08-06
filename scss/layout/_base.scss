@@ -15,7 +15,8 @@ body {
   color: $dark;
 }
 *, *::before, *::after { 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+    outline: none;
 }
 body, html {
   height: 100%;
