@@ -1,0 +1,12 @@
+.menu {
+  background: url("../img/menu-bg.jpg") center center no-repeat;
+  position: relative; }
+
+.menu-list-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.menu__title {
+  color: #fff; }
