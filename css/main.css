@@ -295,6 +295,68 @@ ul {
   font-weight: 300;
   color: #2f3234; }
 
+.team {
+  background: url("../img/team-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
+  position: relative; }
+
+.team__content {
+  background-color: rgba(47, 50, 52, 0.93);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 540px; }
+
+.section__title_team {
+  line-height: 1;
+  margin-bottom: 82px; }
+
+.team__center-container {
+  width: 380px;
+  margin: 0 auto;
+  padding-top: 89px;
+  height: 100%; }
+
+.accordeon {
+  color: #fff; }
+
+.team__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: 'gagalin';
+  margin-bottom: 35px; }
+
+.team__description {
+  height: 0;
+  overflow: hidden; }
+
+.team__img {
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 23px;
+  margin-left: 23px; }
+  .team__img img {
+    margin-left: -18px; }
+
+.team__about {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Ubuntu'; }
+
+.team__name {
+  font-weight: 900;
+  padding-bottom: 7px; }
+
+.team__text {
+  font-weight: 300; }
+
 .feedbacks {
   position: relative; }
 
@@ -370,67 +432,13 @@ ul {
   .feedback__button:hover {
     background-color: #1e2021; }
 
-.team {
-  background: url("../img/team-bg.jpg") 50% 50% no-repeat;
+.order-form {
+  background: url("../img/order-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
-  background-position: 0% 0%;
   position: relative; }
 
-.team__content {
-  background-color: rgba(47, 50, 52, 0.93);
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 540px; }
-
-.section__title_team {
-  line-height: 1;
-  margin-bottom: 82px; }
-
-.team__center-container {
-  width: 380px;
-  margin: 0 auto;
-  padding-top: 89px;
-  height: 100%; }
-
-.accordeon {
+.form__name {
   color: #fff; }
-
-.team__title {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 28px;
-  font-family: 'gagalin';
-  margin-bottom: 35px; }
-
-.team__description {
-  height: 0;
-  overflow: hidden; }
-
-.team__img {
-  width: 101px;
-  height: 101px;
-  border-radius: 50%;
-  overflow: hidden;
-  float: left;
-  margin-right: 23px;
-  margin-left: 23px; }
-  .team__img img {
-    margin-left: -18px; }
-
-.team__about {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: 'Ubuntu'; }
-
-.team__name {
-  font-weight: 900;
-  padding-bottom: 7px; }
-
-.team__text {
-  font-weight: 300; }
 
 .contacts {
   background: url("../img/map-markers.jpg") 50% 50% no-repeat;
