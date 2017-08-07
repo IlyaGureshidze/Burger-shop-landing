@@ -6,6 +6,7 @@
     padding-top: 10px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header__logo {
@@ -16,10 +17,17 @@ margin-right: auto;
     img {
         margin-top: -2px;
         margin-left: -8px;
+         @include tablets {
+            margin-top: 2px;
+            margin-left: 23px;
+        }
     }
 }
 .header__menu {
     margin-right: 16px;
+     @include tablets {
+        display: none;
+  }
 }
 .nav__item {
     display: inline-block;
@@ -75,12 +83,26 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+     @include tablets {
+        flex-direction: column;
+        text-align: center;
+         padding: 0 80px;
+  }
 }
 .about__img {
-  
+      
     img {
         margin-left: 14px;
         margin-top: -14px;
+        max-width: 100%;
+        @include tablets {
+        margin-left: 0;
+            margin-top: 0;
+        }
+    }
+    @include tablets {
+        padding-top: 55px;
     }
 }
 .section__title {
@@ -94,6 +116,10 @@ margin-right: auto;
 }
 .about__description {
     padding-left: 8px;
+    padding-top: 60px;
+    @include tablets {
+        padding-top: 10px;
+    }
 }
 .about__description-text {
     font-family: "lifehack";
@@ -114,6 +140,9 @@ margin-right: auto;
     z-index: 10;
     top: 90px;
     right: 50px;
+    @include tablets {
+        display: none;
+  }
 }
 .nav-bar__list {
     
@@ -133,4 +162,24 @@ margin-right: auto;
     @include circle(6px,#fff);
     box-sizing: content-box;
     color:#fff;
+}
+.hamburger {
+    display: none;
+    width: 24px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    
+    @include tablets {
+        display: flex;
+  }
+}
+.hamburger__item {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 4px;
 }

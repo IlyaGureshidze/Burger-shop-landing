@@ -8,14 +8,14 @@
   min-height: 650px;
 }
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   height: 100%;
 }
 .section {
   height: 100vh;
   background-color: rgba(0,0,0,0.31);
-  min-width: 940px;
+  max-width: 100%;
   min-height: 650px;
 }
 .clearfix:after{
