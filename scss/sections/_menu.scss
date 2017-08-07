@@ -1,6 +1,7 @@
 .menu{
     @include background('../img/menu-bg.jpg');
     position: relative;
+    overflow: hidden;
 }
 .menu__container {
     display: flex;
@@ -28,12 +29,6 @@
     width: 620px;
     .menu-list__content {
         width: 540px;
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin-left: 80px;
         }
 }
 .menu-list__wrapper {
@@ -42,9 +37,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 80px;
 }
 .menu-list__filler {
@@ -78,5 +70,10 @@
     background-color: rgba(47,50,52,.93);
     width: 0;
     overflow:hidden;
-    
+    margin-left: 80px;
+    position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
 }
