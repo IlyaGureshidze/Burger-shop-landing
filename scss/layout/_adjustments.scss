@@ -9,9 +9,12 @@
     @include tablets {
     min-height: 1024px;
   }
+    @include phones {
+        min-height: 800px;
+    }
 }
 .container {
-  max-width: 940px;
+  max-width: 940px + 20px;
   margin: 0 auto;
   height: 100%;
 }
@@ -23,6 +26,9 @@
     @include tablets {
     min-height: 1024px;
   }
+    @include phones {
+        min-height: 800px;
+    }
 }
 .clearfix:after{
   content: "";

@@ -4,10 +4,13 @@
 .feedbacks__item{
     float: left;
     width: 25%;
-    height: rem(325px);
+    height: 325px;
      @include tablets {
         width: 50%;
-        height: rem(256px);
+        height: 325px;
+    }
+    @include phones {
+        height: 200px;
     }
 }
 .feedback{
@@ -34,7 +37,7 @@
     position: absolute;
     transition: .5s;
     color:#fff;
-    padding: rem(50px) rem(30px) 0 rem(20px);
+    padding: 50px 30px 0 20px;
     opacity:0;
     top: 50%;
     left: 50%;
@@ -42,26 +45,37 @@
     transform: translate(-50%,-50%) scale(0.7);
      @include tablets {
         text-align: center;
-         padding-top: rem(30px);
+         padding-top: 30px;
+    }
+    @include phones {
+        padding: 40px 20px 0 20px;
     }
 }
 .feedback__title{
-    font-size: rem(14px);
-    line-height: rem(28px);
+    font-size: 14px;
+    line-height: 28px;
     font-family: 'gagalin';
     text-transform: uppercase;
-    margin-bottom: rem(14px);
+    margin-bottom: 14px;
+    
+    @include phones {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
 }
 .feedback__microtext{
-    font-size: rem(14px);
-    line-height: rem(24px);
+    font-size: 14px;
+    line-height: 24px;
     font-family:ubuntu;
     font-weight: 300;
-    margin-bottom: rem(14px);
+    margin-bottom: 14px;
+    @include phones {
+        display: none;
+    }
 }
 .feedback__button{
     text-transform: uppercase;
-    font-size: rem(13px);
+    font-size: 13px;
     font-family: ubuntu;
     line-height: 2.308;
     text-align: center;
@@ -69,11 +83,17 @@
     font-weight: 700;
     text-decoration: none;
     background-color: $dark;
-    padding: rem(12px) rem(15px);
-    border-radius: rem(5px);
+    padding: 12px 15px;
+    border-radius: 5px;
     transition: .5s;
     
     &:hover{
         background-color: darken($dark,7%);
+    }
+    
+    @include phones {
+        font-size: 12px;
+        padding: 8px 15px;
+        
     }
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width,,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 	<title>Лендинг магазина бургеров</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -72,23 +72,29 @@
                 <ul class="best__list">
                         <li class="li best-list__item">
                             <div class="best-list__img"><img src="img/icons/meat.svg" alt="meat"></div>
-                            <div class="best-list__title">100% свежее мясо</div>
-                            <div class="best-list__description">
-                                Драма представляет собой деструктивный цикл. Анапест представляет анапест. Ямб неравномерен
+                            <div class="best-list__wrapper">
+                                <div class="best-list__title">100% свежее мясо</div>
+                                <div class="best-list__description">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет анапест. Ямб неравномерен
+                                </div>
                             </div>
                         </li>
                         <li class="li best-list__item">
                             <div class="best-list__img"><img src="img/icons/hand.svg" alt="hand"></div>
-                            <div class="best-list__title">Ручная сборка</div>
-                            <div class="best-list__description">
-                                Драма представляет собой деструктивный цикл. Анапест представляет анапест.<br>Первое полустишие притягивает сюжетный реформаторский пафос.
+                            <div class="best-list__wrapper">
+                                <div class="best-list__title">Ручная сборка</div>
+                                <div class="best-list__description">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет анапест.<br>Первое полустишие притягивает сюжетный реформаторский пафос.
+                                </div>
                             </div>
                         </li>
                         <li class="li best-list__item">
                             <div class="best-list__img"><img src="img/icons/natural.svg" alt="leaf"></div>
-                            <div class="best-list__title">Натуральные ингредиенты</div>
-                            <div class="best-list__description">
-                                Драма представляет собой деструктивный цикл. Анапест представляет анапест.
+                            <div class="best-list__wrapper">
+                                <div class="best-list__title">Натуральные ингредиенты</div>
+                                <div class="best-list__description">
+                                    Драма представляет собой деструктивный цикл. Анапест представляет анапест.
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -322,7 +328,7 @@
                             <textarea class="form__input form_textarea"></textarea>
                          </label>
                         </div>
-                        <div class="form__row">
+                        <div class="form__row form__row_center">
                          <label class="form__field form__field_radio">
                             <input type="radio" name="payment-ways" class="form__radio">
                              <span class="form__name">Потребуется сдача</span>
@@ -332,13 +338,13 @@
                              <span class="form__name">Оплата по карте</span>
                          </label>
                         </div>
-                        <div class="form__row">
+                        <div class="form__row form__row_center">
                             <label class="form__field form__field_checkbox">
                             <input type="checkbox" class="form__checkbox" checked>
                              <span class="form__name">Не перезванивать</span>
                          </label>
                         </div>
-                        <div class="form__row">
+                        <div class="form__row form__row_center">
                             <input type="submit" class="form__submit order-link" value="Заказать">
                             <input type="reset" class="form__reset" value="Очистить">
                         </div>
