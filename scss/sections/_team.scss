@@ -11,28 +11,30 @@
     top: 0;
     bottom: 0;
     width: 540px;
+    @include tablets {
+        width: auto;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
-.section__title_team{
+.section__title_team {
     line-height: 1;
     margin-bottom: 60px;
 }
-.team__center-container{
+.team__center-container {
     width: 380px;
     margin: 0 auto;
     padding-top: 89px;
     height: 100%;
+    
+    @include tablets {
+        width: 348px;
+    }
 }
-.accordeon{
+.accordeon {
     color:#fff;
-}
-.team__list{
-    
-}
-.team__item{
-    
-}
-.team__item_active {
-    
 }
 .team__title {
     text-transform: uppercase;
@@ -54,9 +56,12 @@
     position: absolute;
     top: 11px;
     left: 0px;
+    }   
+    @include tablets {
+        display: inline-block;
     }
 }
-.team__item_active{
+.team__item_active {
     
     .team__description{
         height: auto;
@@ -71,11 +76,11 @@
         }
     }
 }
-.team__description{
+.team__description {
     height: 0;
     overflow: hidden;
 }
-.team__img{
+.team__img {
     width: 101px;
     height: 101px;
     border-radius: 50%;
@@ -84,20 +89,25 @@
     margin-right: 20px;
     margin-left: 17px;
     
-    img{
+    img {
         margin-left: -20px;
     }
+    
+    @include tablets {
+        float: none;
+        margin: 0 auto 16px;
+    }
 }
-.team__about{
+.team__about {
     font-size: 14px;
     line-height: 24px;
-    font-family: 'Ubuntu';
+    font-family: ubuntu;
 }
-.team__name{
+.team__name {
     font-weight: 900;
     padding-bottom: 7px;
 }
-.team__text{
+.team__text {
     font-weight: 300;
     font-size: 15px;
 }

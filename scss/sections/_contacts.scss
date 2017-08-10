@@ -37,6 +37,9 @@
 .footer__info {
     display: block;
     height: 100%;
+     @include tablets {
+        padding-left: 24px;
+    }
 }
 .socials {
     text-align: right;

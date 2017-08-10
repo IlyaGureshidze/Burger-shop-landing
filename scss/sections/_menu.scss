@@ -22,7 +22,6 @@
 }
 .menu-list__item {
     position: relative;
-    height: 650px;
     width: 80px;
 }
 .menu-list__item_active {
@@ -30,6 +29,9 @@
     .menu-list__content {
         width: 540px;
         }
+    .menu-list__text {
+        color: #f9b43b;
+    }
 }
 .menu-list__wrapper {
     position: absolute;
@@ -48,17 +50,19 @@
     bottom: 0;
 }
 .menu-list__text {
-    font-family: "gagalin";
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1;
-    color: #fff;
-    text-transform: uppercase;
-    display: inline-block;
-  transform: translate(-50%, -50%) rotate(-90deg);
+  font-family: "gagalin";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  transform: translate(-50%, -100%) rotate(-90deg);
   position: absolute;
-  top: 50%;
+  top: 100%;
+    padding-left: 40px;
   left: 50%;
+  right: 0;
   white-space: nowrap;
 }
 .menu-list__content{
@@ -66,6 +70,7 @@
     color:#fff;
     font-family: ubuntu;
     font-size: 14px;
+    line-height: 22px;
     font-weight: 300;
     background-color: rgba(47,50,52,.93);
     width: 0;

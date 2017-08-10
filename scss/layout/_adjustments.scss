@@ -6,6 +6,9 @@
 .maincontent {
   height: 100%;
   min-height: 650px;
+    @include tablets {
+    min-height: 1024px;
+  }
 }
 .container {
   max-width: 940px;
@@ -17,6 +20,9 @@
   background-color: rgba(0,0,0,0.31);
   max-width: 100%;
   min-height: 650px;
+    @include tablets {
+    min-height: 1024px;
+  }
 }
 .clearfix:after{
   content: "";
