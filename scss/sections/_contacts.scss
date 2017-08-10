@@ -4,7 +4,7 @@
 }
 
 .footer {
-    height: 58px;
+    height: rem(58px);
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -18,27 +18,27 @@
 .footer__address {
     color: #fff;
     font-family: ubuntu;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-weight: 300;
-    padding-top: 7px;
+    padding-top: rem(7px);
 }
 .footer__phone {
     font-family: ubuntu;
     font-weight: 900;
     color: $red;
-    font-size: 14px;
-    line-height: 24px;
-    padding-left: 20px;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    padding-left: rem(20px);
     background-image: url(../img/icons/phone.svg);
-    background-position: 0 5px;
+    background-position: 0 rem(5px);
     background-repeat: no-repeat;
 }
 .footer__info {
     display: block;
     height: 100%;
      @include tablets {
-        padding-left: 24px;
+        padding-left: rem(24px);
     }
 }
 .socials {
@@ -51,9 +51,9 @@
 .socials_icon {
     fill:#fff;
     opacity:0.3;
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+    width: rem(20px);
+    height: rem(20px);
+    margin-right: rem(20px);
     display: inline-block;
     
     &:hover{
