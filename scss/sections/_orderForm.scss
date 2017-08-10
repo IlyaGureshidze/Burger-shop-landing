@@ -86,6 +86,11 @@
             display: none;
         }   
     }
+    &:nth-child(3) {
+       @include phones {
+            margin-right: 0;
+        } 
+    }
 }
 .form__row_center {
     @include phones {

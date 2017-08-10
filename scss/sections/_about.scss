@@ -99,6 +99,9 @@ margin-right: auto;
     @include phones {
         padding: 28px 60px 0;
     }
+    @include small {
+        padding: 28px 30px 0;
+    }
 }
 .about__img {
       
@@ -131,6 +134,9 @@ margin-right: auto;
         line-height: 1;
         margin-bottom: 0;
     }
+    @include small {
+        font-size: 51px;
+    }
 }
 .about__description {
     padding-left: 28px;
@@ -152,6 +158,9 @@ margin-right: auto;
     line-height: 1;
     @include phones {
         font-size: 53px;
+    }
+    @include small {
+        font-size: 44px;
     }
 }
 .about__arrow {

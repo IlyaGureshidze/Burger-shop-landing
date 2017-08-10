@@ -23,3 +23,13 @@
     @content;
   }
 }
+@mixin small {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
+@mixin smallest {
+  @media screen and (max-width: $smallest) {
+    @content;
+  }
+}
