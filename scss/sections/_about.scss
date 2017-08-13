@@ -22,6 +22,8 @@ margin-right: auto;
     img {
         margin-top: -2px;
         margin-left: -8px;
+        position: relative;
+        z-index: 12;
          @include tablets {
             margin-top: 2px;
             margin-left: 23px;
@@ -197,7 +199,7 @@ margin-right: auto;
 }
 .nav-bar__link {
    display:block;
-    @include circle(rem(6px),#fff);
+    @include circle(6px,#fff);
     box-sizing: content-box;
     color:#fff;
 }
@@ -223,4 +225,64 @@ margin-right: auto;
     background-color: #fff;
     border-radius: 4px;
     height: 4px;
+}
+.fullscreen-menu {
+    background-color: rgba(47,50,52,.99);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.fullscreen-menu__close {
+    position: fixed;
+    background: url('../img/cross.png') center center no-repeat;
+    height: 18px;
+    width: 18px;
+    z-index: 10;
+    top: 32px;
+    right: 35px;
+    cursor: pointer;
+}
+.fullscreen-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.fullscreen-menu__item {
+    position: relative;
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+        &:after {
+            display: none;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        @include circle(6px,#fff);
+        bottom: -18px;
+        left: 50%;
+        margin-left: -3px;
+    }
+}
+.fullscreen-menu__link {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: ubuntu;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-decoration: none;
+    position: relative;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
