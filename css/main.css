@@ -407,7 +407,8 @@ ul {
   -webkit-box-direction: normal;
   -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  height: 100vh; }
 
 .fullscreen-menu__item {
   position: relative;
