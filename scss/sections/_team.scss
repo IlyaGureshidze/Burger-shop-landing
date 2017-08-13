@@ -10,7 +10,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: rem(540px);
+    width: 540px;
     @include tablets {
         width: auto;
         left: 0;
@@ -21,20 +21,20 @@
 }
 .section__title_team {
     line-height: 1;
-    margin-bottom: rem(60px);
+    margin-bottom: 60px;
     @include phones {
         margin-bottom: 97px;
         font-size: 49px;
     }
 }
 .team__center-container {
-    width: rem(380px);
+    width: 380px;
     margin: 0 auto;
-    padding-top: rem(89px);
+    padding-top: 89px;
     height: 100%;
     
     @include tablets {
-        width: rem(348px);
+        width: 348px;
     }
     @include phones {
         padding-top: 62px;
@@ -46,23 +46,24 @@
 }
 .team__title {
     text-transform: uppercase;
-    font-size: rem( 14px);
-    line-height: rem(28px);
+    font-size: 14px;
+    line-height: 28px;
     font-family: 'gagalin';
-    margin-bottom: rem(24px);
+    margin-bottom: 24px;
     position: relative;
-    padding-left: rem(20px);
+    padding-left: 20px;
+    cursor: pointer;
     
     &:before {
     content: "";
     width: 0;
     height: 0;
-    border: rem(5px) solid #f9b43b;
+    border: 5px solid #f9b43b;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
     position: absolute;
-    top: rem(11px);
+    top: 11px;
     left: 0px;
         @include phones {
             left: 2px;
@@ -82,17 +83,17 @@
     
     .team__description{
         height: auto;
-        margin-bottom: rem(31px);
+        margin-bottom: 31px;
         @include phones {
             margin-bottom: 35px;
         }
     }
     .team__title {
-        margin-bottom: rem(8px);
+        margin-bottom: 8px;
         color: #f9b43b;
         &:before {
             transform: rotate(180deg);
-            top: rem(4px);
+            top: 4px;
         }
         @include phones {
             margin-bottom: 18px;
@@ -109,29 +110,29 @@
     border-radius: 50%;
     overflow: hidden;
     float: left;
-    margin-right: rem(20px);
-    margin-left: rem(17px);
+    margin-right: 20px;
+    margin-left: 17px;
     
     img {
-        margin-left: rem(-20px);
+        margin-left: -20px;
     }
     
     @include tablets {
         float: none;
-        margin: 0 auto rem(16px);
+        margin: 0 auto 16px;
     }
     @include phones {
         margin-bottom: 17px;
     }
 }
 .team__about {
-    font-size: rem(14px);
-    line-height: rem(24px);
+    font-size: 14px;
+    line-height: 24px;
     font-family: ubuntu;
 }
 .team__name {
     font-weight: 900;
-    padding-bottom: rem(7px);
+    padding-bottom: 7px;
     font-size: 14px;
     @include phones {
         padding-bottom: 12px;
@@ -139,6 +140,6 @@
 }
 .team__text {
     font-weight: 300;
-    font-size: rem(15px);
+    font-size: 15px;
     line-height: 22px;
 }

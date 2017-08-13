@@ -135,7 +135,7 @@
     }
     */
 }
-@media screen and (max-height: 568px){
+@media screen and (max-height: 568px) and (max-width: 320px){
     .section {
         min-height: 100vh;
         overflow: auto;
