@@ -1,0 +1,106 @@
+.slider {
+  background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
+    position: relative;
+}
+.slider__container {
+    padding-top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slider__image {
+    flex:1;
+    padding: 74px 13px 0 10px;
+    position: relative;
+    img {
+        max-width: 100%;
+    }
+}
+.slider__consistence {
+    width: 91px;
+    height: 91px;
+    border-radius: 5px;
+    background: #f08c33 url('../img/burger.png') 54% 43% no-repeat;
+    color: #fff;
+    position: absolute;
+    left: 9px;
+    top: 0;
+    text-transform: uppercase;
+    font: 14px/28px 'gagalin';
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.slider__valuability {
+    position: absolute;
+    font: 14px/24px 'gagalin';
+    text-transform: uppercase;
+    bottom: -84px;
+    left: 9px;
+    color: rgba(255,255,255,.5);
+    text-align: center;
+}
+.slider__kkal {
+    font-size: 20px;
+    background: url('../img/kkal.png') 50% 50% no-repeat;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.slider__text-content {
+    flex: 1;
+}
+.section__title_slider {
+    color:  #fff;
+    line-height: 64px;
+}
+.slider__description {
+    color: #fff;
+    font: 14px/24px ubuntu;
+    font-weight:  300;
+    padding-top: 29px;
+}
+.slider__form {
+    padding-top: 42px;
+    display: flex;
+}
+.slider__price-block {
+    color: #e35028;
+    display: flex;
+    font: 30px/28px 'gagalin';
+    align-items: baseline;
+    margin-right: 25px;
+}
+.slider__price {
+    font-size: 72px;
+    font-weight: 500;
+}
+.slider__btn {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -6px;
+}
+.slider__nav {
+    position: absolute;
+    top: 48%;
+    width: 100%;
+}
+.slider__nav-btn {
+    position: absolute;
+    z-index: 8;
+    height: 27px;
+    width: 15px;
+    background: url('../img/arrow-scroll.png') center center no-repeat;
+}
+.slider__nav-btn_left {
+    left: 47px;
+}
+.slider__nav-btn_right {
+    right: 47px;
+    transform: rotate(180deg);
+    transform-origin: center;
+}

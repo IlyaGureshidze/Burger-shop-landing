@@ -545,6 +545,170 @@ ul {
   font-weight: 300;
   color: #2f3234; }
 
+.slider {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #eb8c38), color-stop(0, #eb8c38), to(#f9b43b));
+  background: -webkit-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background: -o-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background: linear-gradient(180deg, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  position: relative; }
+
+.slider__container {
+  padding-top: 84px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.slider__image {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 74px 13px 0 10px;
+  position: relative; }
+  .slider__image img {
+    max-width: 100%; }
+
+.slider__consistence {
+  width: 91px;
+  height: 91px;
+  border-radius: 5px;
+  background: #f08c33 url("../img/burger.png") 54% 43% no-repeat;
+  color: #fff;
+  position: absolute;
+  left: 9px;
+  top: 0;
+  text-transform: uppercase;
+  font: 14px/28px 'gagalin';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.slider__valuability {
+  position: absolute;
+  font: 14px/24px 'gagalin';
+  text-transform: uppercase;
+  bottom: -84px;
+  left: 9px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center; }
+
+.slider__kkal {
+  font-size: 20px;
+  background: url("../img/kkal.png") 50% 50% no-repeat;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 10px; }
+
+.slider__text-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.section__title_slider {
+  color: #fff;
+  line-height: 64px; }
+
+.slider__description {
+  color: #fff;
+  font: 14px/24px ubuntu;
+  font-weight: 300;
+  padding-top: 29px; }
+
+.slider__form {
+  padding-top: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.slider__price-block {
+  color: #e35028;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 30px/28px 'gagalin';
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-right: 25px; }
+
+.slider__price {
+  font-size: 72px;
+  font-weight: 500; }
+
+.slider__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: -6px; }
+
+.slider__nav {
+  position: absolute;
+  top: 48%;
+  width: 100%; }
+
+.slider__nav-btn {
+  position: absolute;
+  z-index: 8;
+  height: 27px;
+  width: 15px;
+  background: url("../img/arrow-scroll.png") center center no-repeat; }
+
+.slider__nav-btn_left {
+  left: 47px; }
+
+.slider__nav-btn_right {
+  right: 47px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center; }
+
 .team {
   background: url("../img/team-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
