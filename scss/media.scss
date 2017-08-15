@@ -91,6 +91,9 @@
     .section__title_best {
         margin-bottom: 30px;
     }
+    .section__title_slider {
+        line-height: 51px;
+    }
     .best-list__item {
         margin-bottom: 20px;
         margin-right: 0;
@@ -104,6 +107,10 @@
     }
     .section__title_team {
         margin-bottom: 30px;
+    }
+    .slider__image {
+        margin-bottom: 10px;
+        padding-top: 77px;
     }
 }
 @media screen and (max-width: 360px) and (max-height:640px) {
