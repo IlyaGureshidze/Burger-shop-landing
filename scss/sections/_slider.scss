@@ -3,17 +3,32 @@
     position: relative;
 }
 .slider__container {
-    padding-top: 84px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    @include tablets {
+        align-items: center;
+        max-width: 596px;
+    }
 }
 .slider__image {
     flex:1;
     padding: 74px 13px 0 10px;
     position: relative;
+    @include tablets {
+        width: 100%;
+        flex: initial;
+        padding-top: 54px;
+        margin-bottom: 31px;
+    }
     img {
         max-width: 100%;
+        @include tablets {
+            max-width: 100%;
+        }
+        @include phones {
+            max-width: 100%;
+        }
     }
 }
 .slider__consistence {
@@ -30,6 +45,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    @include tablets {
+        left: 62px;
+        top: -16px;
+    }
+    @include phones {
+        left: 8px;
+    }
 }
 .slider__valuability {
     position: absolute;
@@ -39,6 +61,14 @@
     left: 9px;
     color: rgba(255,255,255,.5);
     text-align: center;
+    @include tablets {
+        top: -16px;
+        right: 60px;
+        left: auto;
+    }
+    @include phones {
+        right: 11px;
+    }
 }
 .slider__kkal {
     font-size: 20px;
@@ -53,16 +83,25 @@
 }
 .slider__text-content {
     flex: 1;
+    @include tablets {
+        flex: initial;
+    }
 }
 .section__title_slider {
     color:  #fff;
     line-height: 64px;
+    @include tablets {
+        padding: 0 40px;
+    }
 }
 .slider__description {
     color: #fff;
     font: 14px/24px ubuntu;
     font-weight:  300;
     padding-top: 29px;
+    @include tablets {
+        padding: 13px 0 0 0;
+    }
 }
 .slider__form {
     padding-top: 42px;
@@ -98,9 +137,15 @@
 }
 .slider__nav-btn_left {
     left: 47px;
+    @include phones {
+        left: 11px;
+    }
 }
 .slider__nav-btn_right {
     right: 47px;
     transform: rotate(180deg);
     transform-origin: center;
+    @include phones {
+        right: 11px;
+    }
 }
