@@ -103,6 +103,7 @@
 .team__description {
     height: 0;
     overflow: hidden;
+    transition: all .7s;
 }
 .team__img {
     width: 101px;

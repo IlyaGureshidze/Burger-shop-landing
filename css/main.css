@@ -91,7 +91,7 @@ ul {
   height: 100%; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.31);
   max-width: 100%;
   min-height: 650px; }
@@ -870,7 +870,10 @@ ul {
 
 .team__description {
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s; }
 
 .team__img {
   width: 101px;
@@ -1350,7 +1353,10 @@ ul {
 
 .menu-list__item {
   position: relative;
-  width: 80px; }
+  width: 80px;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s; }
 
 .menu-list__item_active {
   width: 620px; }

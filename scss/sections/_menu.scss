@@ -27,6 +27,7 @@
 .menu-list__item {
     position: relative;
     width: 80px;
+    transition: width .3s;
 }
 .menu-list__item_active {
     width: 620px;
