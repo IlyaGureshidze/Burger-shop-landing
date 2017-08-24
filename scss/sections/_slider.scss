@@ -2,6 +2,14 @@
   background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
     position: relative;
 }
+.slider__holder{
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+}
+.owl-stage,.owl-item,.owl-stage-outer {
+    height: 100%;
+}
 .slider__container {
     display: flex;
     justify-content: center;
@@ -137,20 +145,20 @@
     top: 48%;
     width: 100%;
 }
-.slider__nav-btn {
+.slider__nav-btn,.owl-nav > div {
     position: absolute;
     z-index: 8;
     height: rem(27px);
     width: rem(15px);
     background: url('../img/arrow-scroll.png') center center no-repeat;
 }
-.slider__nav-btn_left {
+.slider__nav-btn_left,.owl-prev {
     left: rem(47px);
     @include phones {
         left: rem(11px);
     }
 }
-.slider__nav-btn_right {
+.slider__nav-btn_right,.owl-next {
     right: rem(47px);
     transform: rotate(180deg);
     transform-origin: center;

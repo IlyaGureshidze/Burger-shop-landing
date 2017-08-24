@@ -68,6 +68,9 @@
   border-radius: rem(5px);
   border: rem(1px) solid #d1cfcb;
   padding: rem(8px) rem(10px);
+    &:focus {
+        border-color: #f9b43b;
+    }
 }
 .form_textarea {
     height: rem(115px);
@@ -184,4 +187,41 @@
         text-decoration: underline;
         cursor: pointer;
     }
+}
+.modal {
+    height: rem(110px);
+    padding: rem(10px) rem(12px);
+    box-shadow: 0 0 rem(5px) #333;
+    border-radius: rem(5px);
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    margin-top: rem(55px);
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    text-align: center;
+}
+.modal__text {
+    color: #333;
+    margin-bottom: (10px);
+    text-align: center;
+    & .success {
+        margin: 0;
+        padding: 0;
+        color: forestgreen;
+    }
+    & .error {
+        margin: 0;
+        padding: 0;
+        color: darkred;
+    }
+}
+.modal__button {
+    width: rem(96px);
+    cursor: pointer;
+    display: inline-block;
 }

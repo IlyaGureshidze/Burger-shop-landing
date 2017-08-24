@@ -21,20 +21,28 @@ $(document).ready(function() {
     $('.hamburger').click(function(){
         $('.fullscreen-menu').fadeIn(300);
     });
-   /* $(".slider").owlCarousel({
-            loop: true,
-            items: 1,
-            dots: false,
-            nav: true//$(this).find('.slider_container').size() > 1? true: false
-            
-    });*/
+    
+    /*---- Слайдер ----*/
+    $(".owl-carousel").owlCarousel({
+        loop: $('.slider_container').size > 1? true: false,
+        items: 1,
+        dots: false,
+        nav: $('.slider_container').size > 1? true: false
+    });
     
     /*---One Page Scroll---*/
     
 $(function() {
-    var sections = $('.section'),
-    frame = $('.maincontent'),
-    inScroll = false;
+    //Определим переменные для работы
+    var sections = $('.section'),//коллекция всех секций лендинга
+    frame = $('.maincontent'),//видимая секция лендинга
+    inScroll = false;//флаг для контроля над инерцией манипуляторов
+    
+    //Определим, какой клиент у пользователя
+    var md = new MobileDetect(window.navigator.userAgent),
+    isMobile = md.mobile();
+    
+    //Функция для выполнения перехода к секции, номер которой указан в аргументе
       var performTransition = function (sectionEq) {
         if (!inScroll){
         inScroll = true;
@@ -54,7 +62,8 @@ $(function() {
             }, 800);
         }
       }
-
+    
+      // Определим окружение текущей секции
       var defineSections = function (sections) {
         var activeSection = sections.filter('.active');
         return {
@@ -64,6 +73,7 @@ $(function() {
         }
       }
 
+    // Функция для автоматического перехода по лендингу, в зависимости от направления движения манипулятора
       var scrollToSection = function (direction) {
         var section = defineSections(sections);
         if (direction == 'up' && section.nextSection.length) { // секции поднимаются вверх
@@ -74,6 +84,7 @@ $(function() {
           performTransition(section.prevSection.index());
         }
       }
+      //Ловим события Скролл мышью, нажатие клавиши на клавиатуре, свайп пальцем
        $('.wrapper').on({
             'wheel': function(e) {
                 var deltaY = e.originalEvent.deltaY,
@@ -105,40 +116,31 @@ $(function() {
             }
 
         });
-    
-        $('[data-target]').on('click', function (e) {
-            
-            e.preventDefault();
-
-            var item = $(this),
-            itemEq = item.data('target');
-            $('.fullscreen-menu').fadeOut(300);
-            performTransition(itemEq);  
-            
-        });
-        
-        /* move to section */
-
-        $('.about__arrow').on('click', function(e) {
-            e.preventDefault();
-            performTransition(1);
-        });
-
-        $('.order-link').on('click', function(e) {
-            e.preventDefault();
-            performTransition(6); /*Index starts counting from 0, eq from 1. First link is second screen*/ 
-
-        });
-
-        /*if (isMobile) {
+        if (isMobile) {
             $(window).swipe({
                 swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
                     scrollToSection(direction);
                 }
             });            
-        }*/
-    });
-    /* --- Map -----*/
+        }
+    //Навешиваем переходы к нужным слайдам по клику,тачу на ссылки в меню и кнопки
+        $('[data-target]').on('click', function (e) {
+            e.preventDefault();
+            var item = $(this),
+            itemEq = item.data('target');
+            $('.fullscreen-menu').fadeOut(300);
+            performTransition(itemEq);   
+        });
+        $('.about__arrow').on('click', function(e) {
+            e.preventDefault();
+            performTransition(1);
+        });
+        $('.order-link').on('click', function(e) {
+            e.preventDefault();
+            performTransition(6);  
+        });
+    });   
+    /* ------- Интерактивная карта Питера --------*/
     $(function(){
 
         ymaps.ready(init);
@@ -192,5 +194,50 @@ $(function() {
 
         }
 
-    })
+    });
+    /*--------Обработка формы заказа---------*/
+    var submitForm = function (ev) {
+    ev.preventDefault();
+
+    var form = $('#orderForm');
+        
+    var request = ajaxForm(form);
+
+    request.done(function(msg) {
+        var mes = msg.message,
+            status = msg.status;
+        if (status === 'OK') {
+            $('.modal__text').html('');
+            $('.modal__text').text(mes).wrap('<p class="success"></p>');
+            $('.modal').show();
+        } else{
+            $('.modal__text').html('');
+            $('.modal__text').text(mes).wrap('<p class="error"></p>');
+            $('.modal').show();
+        }
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Ошибка запроса: " + textStatus);
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+$('#orderForm .order-link').on('click', submitForm);
+$('.modal__button').click(function(){
+    $(this).closest('.modal').hide();
+    $('#orderForm .form__reset').trigger('click');
+});
 });

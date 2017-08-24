@@ -2,6 +2,7 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Лендинг магазина бургеров</title>
@@ -115,33 +116,83 @@
             </div>
         </section>
         <section class="section slider">
-            <div class="container slider__container">
-                <div class="slider__image">
-                    <img src="img/dark-burger.png" alt="">
-                    <div class="slider__consistence">состав</div>
-                    <div class="slider__valuability">
-                        <div class="slider__kkal">1200</div> ккал
+           
+            <div class="slider__holder owl-carousel">
+                <div class="container slider__container">
+                    <div class="slider__image">
+                        <img src="img/dark-burger.png" alt="">
+                        <div class="slider__consistence">состав</div>
+                        <div class="slider__valuability">
+                            <div class="slider__kkal">1200</div> ккал
+                        </div>
+                    </div>
+                    <div class="slider__text-content">
+                        <div class="section__title section__title_slider">Dark beef burger</div>
+                        <div class="slider__description">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </div>                  
+                        <form method="post" class="slider__form">
+                            <div class="slider__price-block">
+                                <div class="slider__price">500</div> рублей
+                            </div>
+                            <div class="slider__btn">
+                                <a href="#" class="order-link">Заказать</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="slider__text-content">
-                    <div class="section__title section__title_slider">Dark beef burger</div>
-                    <div class="slider__description">
-                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                    </div>                  
-                    <form method="post" class="slider__form">
-                        <div class="slider__price-block">
-                            <div class="slider__price">500</div> рублей
+                <div class="container slider__container">
+                    <div class="slider__image">
+                        <img src="img/burger_sandwich.png" alt="">
+                        <div class="slider__consistence">состав</div>
+                        <div class="slider__valuability">
+                            <div class="slider__kkal">1000</div> ккал
                         </div>
-                        <div class="slider__btn">
-                            <a href="#" class="order-link">Заказать</a>
+                    </div>
+                    <div class="slider__text-content">
+                        <div class="section__title section__title_slider">Sandwitch burger</div>
+                        <div class="slider__description">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </div>                  
+                        <form method="post" class="slider__form">
+                            <div class="slider__price-block">
+                                <div class="slider__price">350</div> рублей
+                            </div>
+                            <div class="slider__btn">
+                                <a href="#" class="order-link">Заказать</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container slider__container">
+                    <div class="slider__image">
+                        <img src="img/Chiken_burger.png" alt="">
+                        <div class="slider__consistence">состав</div>
+                        <div class="slider__valuability">
+                            <div class="slider__kkal">800</div> ккал
                         </div>
-                    </form>
+                    </div>
+                    <div class="slider__text-content">
+                        <div class="section__title section__title_slider">Chicken burger</div>
+                        <div class="slider__description">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                        </div>                  
+                        <form method="post" class="slider__form">
+                            <div class="slider__price-block">
+                                <div class="slider__price">400</div> рублей
+                            </div>
+                            <div class="slider__btn">
+                                <a href="#" class="order-link">Заказать</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="slider__nav">
+            
+            <!--div class="slider__nav">
                 <div class="slider__nav-btn slider__nav-btn_left"></div>
                 <div class="slider__nav-btn slider__nav-btn_right"></div>
-            </div>
+            </div-->
         </section>
         <section class="section team">
            <div class="team__content">
@@ -327,40 +378,40 @@
         <section class="section order-form">
             <div class="container order-form__container">
                 <div class="section__title order-form__title">Закажите доставку</div>
-                <form method="post" class="form form_margin">
+                <form method="post" class="form form_margin" action="/handler.php" id="orderForm">
                     <div class="form__column">
                         <div class="form__row">
                          <label class="form__field">
                              <span class="form__name">Имя</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="fio">
                          </label>
                          <label class="form__field">
                              <span class="form__name">Телефон</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="phone">
                          </label>
                         </div>
                         <div class="form__row">
                          <label class="form__field form__field_full">
                              <span class="form__name">Улица</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="street">
                          </label>
                         </div>
                         <div class="form__row">
                          <label class="form__field form__field_quarter">
                              <span class="form__name">Дом</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="home">
                          </label>
                          <label class="form__field form__field_quarter">
                              <span class="form__name">Корпус</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="building">
                          </label>
                          <label class="form__field form__field_quarter">
                              <span class="form__name">Квартира</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="flat">
                          </label>
                          <label class="form__field form__field_quarter">
                              <span class="form__name">Этаж</span>
-                             <input type="text" class="form__input">
+                             <input type="text" class="form__input" name="floor">
                          </label>
                         </div>
                     </div>
@@ -368,22 +419,22 @@
                         <div class="form__row form__row_textarea">
                          <label class="form__field form__field_full">
                              <span class="form__name">Комментарий</span>
-                            <textarea class="form__input form_textarea"></textarea>
+                            <textarea class="form__input form_textarea" name="text"></textarea>
                          </label>
                         </div>
                         <div class="form__row form__row_center">
                          <label class="form__field form__field_radio">
-                            <input type="radio" name="payment-ways" class="form__radio">
+                            <input type="radio" name="payment-ways" class="form__radio" value="Потребуется сдача">
                              <span class="form__name">Потребуется сдача</span>
                          </label>
                          <label class="form__field form__field_radio">
-                            <input type="radio" name="payment-ways" class="form__radio" checked>
+                            <input type="radio" name="payment-ways" class="form__radio" checked value="Оплата по карте">
                              <span class="form__name">Оплата по карте</span>
                          </label>
                         </div>
                         <div class="form__row form__row_center">
                             <label class="form__field form__field_checkbox">
-                            <input type="checkbox" class="form__checkbox" checked>
+                            <input type="checkbox" class="form__checkbox" name="isCallBack" checked>
                              <span class="form__name">Не перезванивать</span>
                          </label>
                         </div>
@@ -393,6 +444,10 @@
                         </div>
                     </div>
                 </form>
+                <div class="modal">
+                    <div class="modal__text"></div>
+                    <div class="order-link modal__button">Закрыть</div>
+                </div>
             </div>
         </section>
         <section class="section contacts">
@@ -432,7 +487,9 @@
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
