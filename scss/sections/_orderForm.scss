@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 .order-form__title{
     text-align: center;
@@ -23,9 +24,9 @@
     }
 }
 .form_margin{
-    margin-top: 58px;
+    margin-top: rem(58px);
     @include phones {
-        margin-top: 20px;
+        margin-top: rem(20px);
     }
 }
 .form__column {
@@ -35,17 +36,13 @@
     &:last-child {
         margin-right: 0;
     }
-     @include tablets {
-        width: 62%;
-         margin: 0;
-    }
     @include phones {
         width: 96%;
     }
 }
 .form__row {
     display: flex;
-    margin-bottom: 16px; 
+    margin-bottom: rem(16px); 
 }
 .form__field {
     flex:1;
@@ -63,17 +60,17 @@
     display: block;
     font-family: ubuntu;
     font-weight: 300;
-    padding-bottom: 7px;
-    font-size: 14px;
+    padding-bottom: rem(7px);
+    font-size: rem(14px);
 }
 .form__input{
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #d1cfcb;
-  padding: 8px 10px;
+  border-radius: rem(5px);
+  border: rem(1px) solid #d1cfcb;
+  padding: rem(8px) rem(10px);
 }
 .form_textarea {
-    height: 115px;
+    height: rem(115px);
     resize: none;
 }
 .form__field_full {
@@ -95,7 +92,7 @@
 .form__row_center {
     @include phones {
         justify-content: center;
-        padding-top: 19px;
+        padding-top: rem(19px);
     }
     .form__field_radio {
         @include phones {
@@ -104,7 +101,7 @@
     }
 }
 .form__row_textarea {
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
 }
 .form__field_radio, .form__field_checkbox{
     display: flex;
@@ -114,7 +111,7 @@
         padding-bottom: 0;
     }
     input {
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
 }
 .form__checkbox{
@@ -125,16 +122,16 @@
     color: #fff;
     font-weight: 900;
     font-family: "Arial Black";
-    border: (3px) solid #fff;
+    border: rem(3px) solid #fff;
     content: "\2714";
     display: inline-block;
-    height: 15px;
-    width: 15px;
-    line-height: 8px;
-    text-indent: -1px;
-    margin: -8px 9px 0 4px;
+    height: rem(15px);
+    width: rem(15px);
+    line-height: rem(8px);
+    text-indent: rem(-1px);
+    margin: rem(-8px) rem(9px) 0 rem(4px);
     box-sizing: border-box;
-    box-shadow: 0 0 0 1px #e7e7e7;
+    box-shadow: 0 0 0 rem(1px) #e7e7e7;
         
         &:hover {
           cursor: pointer;
@@ -150,16 +147,16 @@
     
     & + span::before {
       background: #fff none repeat scroll 0 0;
-      border: 2px solid #fff;
+      border: rem(2px) solid #fff;
       border-radius: 50%;
       content: "";
       display: inline-block;
-      height: 11px;
-      width: 11px;
-      padding: 2px;
-      margin: -4px 9px -2px 3px;
+      height: rem(11px);
+      width: rem(11px);
+      padding: rem(2px);
+      margin: rem(-4px) rem(9px) rem(-2px) rem(3px);
       box-sizing: border-box;
-      box-shadow: 0 0 0 1px #e7e7e7;
+      box-shadow: 0 0 0 rem(1px) #e7e7e7;
         
         &:hover {
           cursor: pointer;
@@ -179,8 +176,8 @@
     background: none;
     color: #fff;
     font-family: ubuntu;
-    font-size: 14px;
-    padding: 0 21px;
+    font-size: rem(14px);
+    padding: 0 rem(21px);
     font-weight: 300;
     
     &:hover {

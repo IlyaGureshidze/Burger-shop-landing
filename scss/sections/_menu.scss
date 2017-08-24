@@ -8,10 +8,10 @@
 }
 .menu__title {
     color: #fff;
-    margin-top: 110px;
+    margin-top: rem(110px);
     @include phones {
-        margin: 52px 0 0 59px;
-        font-size: 51px;
+        margin: rem(52px) 0 0 rem(59px);
+        font-size: rem(51px);
     }
 }
 .menu-list-container {
@@ -26,19 +26,19 @@
 }
 .menu-list__item {
     position: relative;
-    width: 80px;
+    width: rem(80px);
     transition: width .3s;
 }
 .menu-list__item_active {
-    width: 620px;
+    width: rem(620px);
     @include phones {
-        width: 320px;
+        width: rem(320px);
     }
     .menu-list__content {
-        width: 540px;
+        width: rem(540px);
         @include phones {
-            width: 240px;
-            padding: 30px 20px 30px;
+            width: rem(240px);
+            padding: rem(30px) rem(20px) rem(30px);
         }
     }
     .menu-list__text {
@@ -65,7 +65,7 @@
 .menu-list__text {
   font-family: "gagalin";
   font-weight: 400;
-  font-size: 40px;
+  font-size: rem(40px);
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
@@ -73,22 +73,22 @@
   transform: translate(-50%, -100%) rotate(-90deg);
   position: absolute;
   top: 100%;
-  padding-left: 80px;
+  padding-left: rem(80px);
   left: 50%;
   right: 0;
   white-space: nowrap;
 }
 .menu-list__content{
-    padding: 62px 36px 30px;
+    padding: rem(62px) rem(36px) rem(30px);
     color:#fff;
     font-family: ubuntu;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: rem(14px);
+    line-height: rem(22px);
     font-weight: 300;
     background-color: rgba(47,50,52,.93);
     width: 0;
     overflow:hidden;
-    margin-left: 80px;
+    margin-left: rem(80px);
     position: absolute;
     right: 0;
     left: 0;

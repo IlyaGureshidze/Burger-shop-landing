@@ -3,7 +3,7 @@
     position: relative;
 }
 .best__container {
-    height: 100vh;
+    height: 100%;
     position: relative;
     display: flex;
     flex-flow: column wrap;
@@ -13,24 +13,24 @@
 .section__title_best {
     text-align: center;
     color: #2f3234;
-    margin-bottom: 59px;
+    margin-bottom: rem(59px);
     @include phones {
-       font-size: 50px;
-        margin-bottom: 76px;
+       font-size: rem(50px);
+        margin-bottom: rem(76px);
     }
 }
 .best__list {
     width: 100%;
-    padding-bottom: 120px;
+    -padding-bottom: rem(120px);
     display: flex;
     
     @include phones {
         flex-wrap: wrap;
-        padding-bottom: 88px;
+        -padding-bottom: rem(88px);
     }
 }
 .best-list__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     flex: 1;
     text-align: center;
     
@@ -41,15 +41,15 @@
         flex: 1 1 auto;
         text-align: left;
         display: flex;
-        margin-bottom: 49px;
+        margin-bottom: rem(49px);
     }
 }
 .best-list_wrapper{
     
 }
 .best-list__img {
-    margin-bottom: 35px;
-    height: 90px;
+    margin-bottom: rem(35px);
+    height: rem(90px);
     
     img {
         max-width: 100%;
@@ -58,20 +58,20 @@
         display: flex;
         justify-content: center;
         height: auto;
-        min-width: 148px;
+        min-width: rem(148px);
         margin: 0;
-        padding-bottom: 18px;
+        padding-bottom: rem(18px);
     }
 }
 .best-list__title {
     font-family: "lifehack";
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 10px;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(10px);
 }
 .best-list__description {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family:ubuntu;
     font-weight: 300;
     color: $dark;

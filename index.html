@@ -6,61 +6,64 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Лендинг магазина бургеров</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="maincontent">
-       <nav class="nav-bar">
+   <nav class="nav-bar">
            <ul class="nav-bar__list">
-               <li class="nav-bar__item nav-bar__item_active"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
-               <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+               <li class="nav-bar__item nav-bar__item_active"><a href="#" class="nav-bar__link" data-target="0"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="1"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="2"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="3"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="4"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="5"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="6"></a></li>
+               <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="7"></a></li>
            </ul>
        </nav>
        <nav class="fullscreen-menu">
           <div class="fullscreen-menu__close"></div>
            <ul class="fullscreen-menu__list">
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Почему мы</a></li>
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Меню</a></li>
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Советы</a></li>
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Кто мы</a></li>
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Свяжитесь с нами</a></li>
-               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link">Контакты</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="1">О нас</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="2">Бургеры</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="3">Команда</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="4">Меню</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="5">Отзывы</a></li>
+               <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="7">Контакты</a></li>
            </ul>
        </nav>
-        <section class="section about">
+    <div class="maincontent">
+        <section class="section about active">
             <div class="container about__container">
                 <header class="header">
-                   <div class="header__logo">
-                       <a href="#" class="logo">
-                           <img src="img/icons/logo.svg" alt="logo">
-                       </a>
-                   </div>
-                   <div class="header__menu">
-                       <nav class="nav">
-                           <ul class="nav__list">
-                               <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-                               <li class="nav__item"><a href="" class="nav__link">Бургеры</a></li>
-                               <li class="nav__item"><a href="" class="nav__link">Команда</a></li>
-                               <li class="nav__item"><a href="" class="nav__link">Меню</a></li>
-                               <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
-                               <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-                           </ul>
-                       </nav>
-                   </div>
-                   <div class="header__button">
-                           <a href="#" class="order-link">Заказать</a>
+                   <div class="container">
+                       <div class="header__logo">
+                           <a href="#" class="logo">
+                               <img src="img/icons/logo.svg" alt="logo">
+                           </a>
                        </div>
-                    <div class="hamburger">
-                       <div class="hamburger__item"></div>
-                       <div class="hamburger__item"></div>
-                       <div class="hamburger__item"></div>
+                       <div class="header__menu">
+                           <nav class="nav">
+                               <ul class="nav__list">
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="1">О нас</a></li>
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="2">Бургеры</a></li>
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="3">Команда</a></li>
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="4">Меню</a></li>
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="5">Отзывы</a></li>
+                                   <li class="nav__item"><a href="" class="nav__link" data-target="7">Контакты</a></li>
+                               </ul>
+                           </nav>
+                       </div>
+                       <div class="header__button">
+                               <a href="#" class="order-link">Заказать</a>
+                           </div>
+                        <div class="hamburger">
+                           <div class="hamburger__item"></div>
+                           <div class="hamburger__item"></div>
+                           <div class="hamburger__item"></div>
+                       </div>
                    </div>
                </header>
                 <div class="about__content">
@@ -427,6 +430,7 @@
     </div>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

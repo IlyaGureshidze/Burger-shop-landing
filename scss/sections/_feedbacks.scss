@@ -1,16 +1,16 @@
 .feedbacks{
     position: relative;
 }
+.feedbacks__list {
+    height: 100%;
+}
 .feedbacks__item{
     float: left;
     width: 25%;
-    height: 325px;
+    height: 50%;
      @include tablets {
         width: 50%;
-        height: 325px;
-    }
-    @include phones {
-        height: 200px;
+        height: 25vh;
     }
 }
 .feedback{
@@ -37,7 +37,7 @@
     position: absolute;
     transition: .5s;
     color:#fff;
-    padding: 50px 30px 0 20px;
+    padding: rem(50px) rem(30px) 0 rem(20px);
     opacity:0;
     top: 50%;
     left: 50%;
@@ -45,37 +45,37 @@
     transform: translate(-50%,-50%) scale(0.7);
      @include tablets {
         text-align: center;
-         padding-top: 30px;
+         padding-top: rem(30px);
     }
     @include phones {
-        padding: 40px 20px 0 20px;
+        padding: rem(40px) rem(20px) 0 rem(20px);
     }
 }
 .feedback__title{
-    font-size: 14px;
-    line-height: 28px;
+    font-size: rem(14px);
+    line-height: rem(28px);
     font-family: 'gagalin';
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
     
     @include phones {
-        font-size: 24px;
-        margin-bottom: 25px;
+        font-size: rem(24px);
+        margin-bottom: rem(25px);
     }
 }
 .feedback__microtext{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family:ubuntu;
     font-weight: 300;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
     @include phones {
         display: none;
     }
 }
 .feedback__button{
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: rem(13px);
     font-family: ubuntu;
     line-height: 2.308;
     text-align: center;
@@ -83,8 +83,8 @@
     font-weight: 700;
     text-decoration: none;
     background-color: $dark;
-    padding: 12px 15px;
-    border-radius: 5px;
+    padding: rem(12px) rem(15px);
+    border-radius: rem(5px);
     transition: .5s;
     
     &:hover{
@@ -92,8 +92,8 @@
     }
     
     @include phones {
-        font-size: 12px;
-        padding: 8px 15px;
+        font-size: rem(12px);
+        padding: rem(8px) rem(15px);
         
     }
 }
