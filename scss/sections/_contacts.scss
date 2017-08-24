@@ -1,8 +1,11 @@
 .contacts {
-    @include background('../img/map-markers.jpg');
+    //@include background('../img/map-markers.jpg');
     position: relative;
 }
-
+#map {
+    width: 100%;
+    height: 100%;
+}
 .footer {
     height: rem(58px);
     width: 100%;

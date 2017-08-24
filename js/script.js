@@ -138,4 +138,59 @@ $(function() {
             });            
         }*/
     });
+    /* --- Map -----*/
+    $(function(){
+
+        ymaps.ready(init);
+        var myMap;
+
+        function init(){     
+            myMap = new ymaps.Map("map", {
+                center: [59.92606548, 30.32610869],
+                zoom: 12
+            });
+
+            myPlacemark = new ymaps.Placemark([59.940700, 30.277555], {
+                 hintContent: 'на Васильевском острове', 
+                 balloonContent: '9 линия Васильевского отсрова, 30'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/map-marker.svg',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-15, -50]
+            });
+
+            myPlacemark2 = new ymaps.Placemark([59.936246, 30.321114], {
+                 hintContent: 'на Невском', 
+                 balloonContent: 'Невский проспект, 20'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/map-marker.svg',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-15, -50]
+            });
+
+            myPlacemark3 = new ymaps.Placemark([59.925723, 30.315913], {
+                 hintContent: 'на Садовой', 
+                 balloonContent: 'Московский проспект, 103к2'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/map-marker.svg',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-15, -50]
+            });
+
+            myMap.geoObjects
+            .add(myPlacemark)
+            .add(myPlacemark2)
+            .add(myPlacemark3);
+
+            myMap.behaviors
+            .disable('scrollZoom')
+            .disable('drag')
+            
+
+        }
+
+    })
 });
