@@ -37,7 +37,7 @@
     </html>    
     ';
 
-    $headers = "From: Менеджер сайта <ilyagureshidze90@mail.ru>\r\n".
+    $headers = "From: Администратор сайта <enigmaster90@gmail.com>\r\n".
     "MIME-Version: 1.0" . "\r\n" .
     "Content-type: text/html; charset=UTF-8" . "\r\n";
 
@@ -47,10 +47,10 @@
 
     if ($mail) {
         $data['status'] = "OK";
-        $data['message'] = "Письмо успешно отправлено";
+        $data['message'] = "Сообщение отправлено";
     }else{
         $data['status'] = "NO";
-        $data['message'] = "На сервере произошла ошибка";
+        $data['message'] = "Произошла ошибка сервера!";
     }
 
     echo json_encode($data);
