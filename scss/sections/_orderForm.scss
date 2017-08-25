@@ -36,6 +36,10 @@
     &:last-child {
         margin-right: 0;
     }
+    @include tablets {
+        width: 96%;
+        margin-right: 0
+    }
     @include phones {
         width: 96%;
         margin-right: 0

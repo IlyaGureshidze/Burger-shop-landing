@@ -25,6 +25,14 @@
         left: 2.3125rem;
     }
 }
+@media screen and (max-width: 664px) {
+    .form_margin {
+        margin-top: 0.625rem;
+    }
+    .order-form__title {
+        line-height: 1;
+    }
+}
 @media screen and (max-width: 425px) {
     .menu__title-wrapper {
         font-size: 1.5rem;
@@ -40,11 +48,11 @@
         margin-bottom: 1.0625rem;
     }
     .section__title_slider {
-        line-height: 51px;
+        line-height: rem(51px);
     } 
     .slider__image {
-        margin-bottom: 10px;
-        padding-top: 77px;
+        margin-bottom: rem(10px);
+        padding-top: rem(77px);
     }
 }
 @media screen and (max-width: 360px) and (max-height:640px) {
