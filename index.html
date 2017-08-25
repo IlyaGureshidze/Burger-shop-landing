@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
-   <nav class="nav-bar">
+    <nav class="nav-bar">
            <ul class="nav-bar__list">
                <li class="nav-bar__item nav-bar__item_active"><a href="#" class="nav-bar__link" data-target="0"></a></li>
                <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="1"></a></li>
@@ -24,7 +24,7 @@
                <li class="nav-bar__item"><a href="#" class="nav-bar__link" data-target="7"></a></li>
            </ul>
        </nav>
-       <nav class="fullscreen-menu">
+    <nav class="fullscreen-menu">
           <div class="fullscreen-menu__close"></div>
            <ul class="fullscreen-menu__list">
                <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="1">О нас</a></li>
@@ -35,6 +35,14 @@
                <li class="fullscreen-menu__item"><a href="#" class="fullscreen-menu__link" data-target="7">Контакты</a></li>
            </ul>
        </nav>
+    <div class="overlay"></div>
+    <div class="feedback__popup">
+        <div class="popup__close"></div>
+            <div class="popup__title">Константин Спилберг</div>
+            <div class="popup__text">
+            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </div>
+    </div>
     <div class="maincontent">
         <section class="section about active">
             <div class="container about__container">
@@ -115,13 +123,83 @@
                     </ul>
             </div>
         </section>
-        <section class="section slider">
-           
+        <section class="section slider">       
             <div class="slider__holder owl-carousel">
                 <div class="container slider__container">
                     <div class="slider__image">
                         <img src="img/dark-burger.png" alt="">
-                        <div class="slider__consistence">состав</div>
+                        <div class="slider__consistence">состав
+                        </div>
+                         <table class="consistence__table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/beef.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Говядина
+                                    </td>
+                                    <td>
+                                        300 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/buns.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Булочки
+                                    </td>
+                                    <td>
+                                        100 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/salad.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Зелень
+                                    </td>
+                                    <td>
+                                        70 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/sauce.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Соус
+                                    </td>
+                                    <td>
+                                        150 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cucumber.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Овощи
+                                    </td>
+                                    <td>
+                                        200 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cheese.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Сыр
+                                    </td>
+                                    <td>
+                                        80 г
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        
                         <div class="slider__valuability">
                             <div class="slider__kkal">1200</div> ккал
                         </div>
@@ -144,7 +222,77 @@
                 <div class="container slider__container">
                     <div class="slider__image">
                         <img src="img/burger_sandwich.png" alt="">
-                        <div class="slider__consistence">состав</div>
+                        <div class="slider__consistence">состав
+                        </div>
+                        <table class="consistence__table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/beef.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Говядина
+                                    </td>
+                                    <td>
+                                        300 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/buns.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Булочки
+                                    </td>
+                                    <td>
+                                        100 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/salad.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Зелень
+                                    </td>
+                                    <td>
+                                        70 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/sauce.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Соус
+                                    </td>
+                                    <td>
+                                        150 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cucumber.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Овощи
+                                    </td>
+                                    <td>
+                                        200 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cheese.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Сыр
+                                    </td>
+                                    <td>
+                                        80 г
+                                    </td>
+                                </tr>
+                            </tbody></table>
                         <div class="slider__valuability">
                             <div class="slider__kkal">1000</div> ккал
                         </div>
@@ -167,7 +315,77 @@
                 <div class="container slider__container">
                     <div class="slider__image">
                         <img src="img/Chiken_burger.png" alt="">
-                        <div class="slider__consistence">состав</div>
+                        <div class="slider__consistence">состав
+                        </div>
+                        <table class="consistence__table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/beef.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Говядина
+                                    </td>
+                                    <td>
+                                        300 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/buns.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Булочки
+                                    </td>
+                                    <td>
+                                        100 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/salad.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Зелень
+                                    </td>
+                                    <td>
+                                        70 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/sauce.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Соус
+                                    </td>
+                                    <td>
+                                        150 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cucumber.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Овощи
+                                    </td>
+                                    <td>
+                                        200 г
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/icons/cheese.svg" alt="">
+                                    </td>
+                                    <td>
+                                        Сыр
+                                    </td>
+                                    <td>
+                                        80 г
+                                    </td>
+                                </tr>
+                            </tbody></table>
                         <div class="slider__valuability">
                             <div class="slider__kkal">800</div> ккал
                         </div>
@@ -188,11 +406,6 @@
                     </div>
                 </div>
             </div>
-            
-            <!--div class="slider__nav">
-                <div class="slider__nav-btn slider__nav-btn_left"></div>
-                <div class="slider__nav-btn slider__nav-btn_right"></div>
-            </div-->
         </section>
         <section class="section team">
            <div class="team__content">

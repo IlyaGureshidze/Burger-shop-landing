@@ -7,14 +7,6 @@ $(document).ready(function() {
             $(this).removeClass('team__item_active');
         }
     });
-    $('.menu-list__item').click(function() {
-        if(!$(this).hasClass('menu-list__item_active')) {
-          $(this).addClass('menu-list__item_active').siblings().removeClass('menu-list__item_active');
-        }
-        else {
-            $(this).removeClass('menu-list__item_active');
-        }
-    });
     $('.fullscreen-menu__close').click(function(){
         $('.fullscreen-menu').fadeOut(300);
     });
@@ -24,10 +16,10 @@ $(document).ready(function() {
     
     /*---- Слайдер ----*/
     $(".owl-carousel").owlCarousel({
-        loop: $('.slider_container').size > 1? true: false,
+        loop: true,
         items: 1,
-        dots: false,
-        nav: $('.slider_container').size > 1? true: false
+        dots: true,
+        nav: true
     });
     
     /*---One Page Scroll---*/
@@ -240,4 +232,57 @@ $('.modal__button').click(function(){
     $(this).closest('.modal').hide();
     $('#orderForm .form__reset').trigger('click');
 });
+    /*--------Попап в отзывах-------*/
+    $('.feedback__button').click(function(e) {
+        e.preventDefault();
+        var text = $(this).closest('.feedback__hover').find('.feedback__microtext').text();
+        var title = $(this).closest('.feedback__hover').find('.feedback__title').text();
+        $('.popup__title').text(title);
+        $('.popup__text').text(text);
+        $('.overlay').show();
+        $('.feedback__popup').show();
+    });
+    $('.popup__close').click(function() {
+        $(this).closest('.feedback__popup').hide();
+        $('.overlay').hide();
+    });
+    /*-------Расчет открытия аккордеона------*/
+    
+    $('.menu-list__item').click(function() {
+        
+//        if($(window).width() < 780) {
+//            var winWidth = $(window).width();
+//            var list = $('.menu-list').width();
+//            var space = winWidth - list;
+//            var item = $('.menu-list__item:not(.menu-list__item_active)').width();
+//            var content = space - item;
+////            console.log(space);
+////            console.log(item);
+////            console.log(content);
+//                
+//              if(!$(this).hasClass('menu-list__item_active')) {
+//
+//                 $(this).find('.menu-list__content').width(content);
+//                 $(this).width(space + item);
+//                 //console.log($(this).width());
+//                    $(this).addClass('menu-list__item_active').siblings().removeClass('menu-list__item_active');
+//                    $(this).siblings().width(item);
+//                    $(this).siblings().find('.menu-list__content').width(0);
+//                }
+//                else {
+//                    $(this).find('.menu-list__content').width(0);
+//                    $(this).width(item);
+//                    $(this).removeClass('menu-list__item_active');
+//                }
+//        }
+//        else{
+          if(!$(this).hasClass('menu-list__item_active')) {
+            $(this).addClass('menu-list__item_active').siblings().removeClass('menu-list__item_active');
+          }
+          else {
+            $(this).removeClass('menu-list__item_active');
+          }  
+        //}
+    });
+    
 });

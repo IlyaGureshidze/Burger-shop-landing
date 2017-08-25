@@ -30,6 +30,9 @@
         padding-top: rem(54px);
         margin-bottom: rem(31px);
     }
+    @include phones {
+        width: 50%;
+    }
     img {
         max-width: 100%;
         @include tablets {
@@ -49,6 +52,7 @@
     position: absolute;
     left: rem(9px);
     top: 0;
+    cursor: pointer;
     text-transform: uppercase;
     font-size: rem(14px);
     line-height: rem(28px);
@@ -56,12 +60,19 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
+    &:hover {
+        background-color: #e35028;
+        & + .consistence__table {
+            opacity: 1;
+        }
+    }
     @include tablets {
         left: rem(62px);
         top: rem(-16px);
     }
     @include phones {
-        left: rem(8px);
+        left: -50% !important;
     }
 }
 .slider__valuability {
@@ -80,7 +91,7 @@
         left: auto;
     }
     @include phones {
-        right: rem(11px);
+        right: -50% !important;
     }
 }
 .slider__kkal {
@@ -148,8 +159,9 @@
 .slider__nav-btn,.owl-nav > div {
     position: absolute;
     z-index: 8;
+    color: transparent;
     height: rem(27px);
-    width: rem(15px);
+    width: rem(17px);
     background: url('../img/arrow-scroll.png') center center no-repeat;
 }
 .slider__nav-btn_left,.owl-prev {
@@ -166,3 +178,42 @@
         right: rem(11px);
     }
 }
+.owl-nav {
+    position: relative;
+    width: 100%;
+    top: -50%;
+}
+.consistence__table {
+    width: rem(268px);
+    height: rem(332px);
+    padding: rem(20px);
+    border-radius: rem(5px);
+    background-color: rgba(255,255,255,.9);
+    font-family: ubuntu;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: rem(101px);
+    opacity: 0;
+    transition: opacity .3s;
+    color: #333;
+    text-transform: none;
+    td{
+        padding-bottom: rem(17px);
+    }
+    tr{
+        &:last-child {
+            td {
+              padding-bottom: 0;   
+            }
+        }
+    }
+    img {
+        width: rem(44px) !important;
+    }
+    @include phones {
+        left: -1.6875rem !important;
+    }
+} 

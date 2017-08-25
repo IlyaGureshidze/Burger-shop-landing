@@ -1,3 +1,30 @@
+@media screen and (max-width: 1030px) {
+    .slider__container {
+        flex-direction: column;
+    }
+    .slider__image {
+        width: 45%;
+    }
+    .slider__text-content {
+        text-align: center;
+    }
+    .slider__form {
+        display: inline-flex;
+    }
+    .slider__valuability {
+        top: 0.5rem;
+        right: -3.5625rem;
+        bottom: auto;
+        left: auto;
+    }
+    .slider__consistence {
+        top: 0;
+        left: -3.5625rem;
+    }
+    .consistence__table {
+        left: 2.3125rem;
+    }
+}
 @media screen and (max-width: 380px) {
     .section__title_best {
         margin-bottom: 1.75rem
