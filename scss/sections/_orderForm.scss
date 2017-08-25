@@ -38,6 +38,7 @@
     }
     @include phones {
         width: 96%;
+        margin-right: 0
     }
 }
 .form__row {

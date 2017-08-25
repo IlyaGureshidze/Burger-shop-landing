@@ -25,6 +25,12 @@
         left: 2.3125rem;
     }
 }
+@media screen and (max-width: 425px) {
+    .menu__title-wrapper {
+        font-size: 1.5rem;
+        width: 2.375rem;
+    }
+}
 @media screen and (max-width: 380px) {
     .section__title_best {
         margin-bottom: 1.75rem

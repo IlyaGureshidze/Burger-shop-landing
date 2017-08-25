@@ -248,41 +248,32 @@ $('.modal__button').click(function(){
     });
     /*-------Расчет открытия аккордеона------*/
     
-    $('.menu-list__item').click(function() {
-        
-//        if($(window).width() < 780) {
-//            var winWidth = $(window).width();
-//            var list = $('.menu-list').width();
-//            var space = winWidth - list;
-//            var item = $('.menu-list__item:not(.menu-list__item_active)').width();
-//            var content = space - item;
-////            console.log(space);
-////            console.log(item);
-////            console.log(content);
-//                
-//              if(!$(this).hasClass('menu-list__item_active')) {
-//
-//                 $(this).find('.menu-list__content').width(content);
-//                 $(this).width(space + item);
-//                 //console.log($(this).width());
-//                    $(this).addClass('menu-list__item_active').siblings().removeClass('menu-list__item_active');
-//                    $(this).siblings().width(item);
-//                    $(this).siblings().find('.menu-list__content').width(0);
-//                }
-//                else {
-//                    $(this).find('.menu-list__content').width(0);
-//                    $(this).width(item);
-//                    $(this).removeClass('menu-list__item_active');
-//                }
-//        }
-//        else{
-          if(!$(this).hasClass('menu-list__item_active')) {
-            $(this).addClass('menu-list__item_active').siblings().removeClass('menu-list__item_active');
-          }
-          else {
-            $(this).removeClass('menu-list__item_active');
-          }  
-        //}
-    });
+        $('.accordeon__title').click(function (e) {
+            e.preventDefault();
+            var target = $(e.target),
+            menuItem = target.closest('.menu__item'),
+            wrapper = menuItem.find('.menu__content-wrapper'),
+            siblings = menuItem.siblings(),
+            siblingWrappers = siblings.find('.menu__content-wrapper'),
+            menuItemWidth = $('.menu__item').length * $('.menu__title-wrapper').width();
+
+            if($(window).width() < 769) {
+             var availableSpace = $(window).width() - menuItemWidth;
+            }
+            else {
+             var availableSpace = $(window).width()*0.65 - menuItemWidth;
+            }
+            
+            if (!menuItem.hasClass('active')) {
+                siblings.removeClass('active'),
+                menuItem.addClass('active'),
+                siblingWrappers.css('width', '0'),
+                wrapper.css('width', availableSpace)
+            } else {
+                menuItem.removeClass('active'),
+                wrapper.css('width', '0')
+            }
+
+        });
     
 });
